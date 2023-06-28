@@ -1,39 +1,30 @@
 grammar Prova;
 
 start: iniz;
-iniz:
-    list #generatoreDiListe
-;
 
-list:
-    alfa list1 #successivo
-;
+iniz: list;
 
-list1:
-    ','list #nuovoElemento
-    |   #vuoto
-;
+list: alfa (',' alfa)*;
 
 alfa:
-    '(' expr ')' ('*')? alfa?#nuovaEspressioneP
-    | expr alfa?#nuovaEspressione
+    '(' expr ')' clini alfa #nuovaEspressioneP
+    | expr clini alfa? #nuovaEspressione
+    | FINAl #fine
+    | #fineSenzaFinal
 ;
 
-expr:
-    expr FINAl #per
-    | expr1 #passo
-;
-expr1:
-    expr1 '+' FINAl #piu
-    | FINAl #final
-;
+clini: '*' #cliniSi | #cliniNO;
 
+expr: expr1 expr2?;
 
-FINAl:
-    [a-z]+('*')?
-    | [A-Z]+('*')?
-    | [0-9]+('*')?
-    |[espilon]
-;
+expr1: FINAl expr3? #piu;
 
-WS: [\t\r\n]+ -> skip;
+expr2: FINAl expr2?;
+
+expr3: '+' possibilita?;
+
+possibilita: FINAl | alfa;
+
+FINAl: [a-zA-Z0-9] | 'epsilon';
+
+WS: [ \t\r\n]+ -> skip;

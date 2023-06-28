@@ -100,13 +100,49 @@ public class ProvaBaseListener implements ProvaListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPasso(ProvaParser.PassoContext ctx) { }
+	@Override public void enterFine(ProvaParser.FineContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPasso(ProvaParser.PassoContext ctx) { }
+	@Override public void exitFine(ProvaParser.FineContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFineSenzaFinal(ProvaParser.FineSenzaFinalContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFineSenzaFinal(ProvaParser.FineSenzaFinalContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterCliniSi(ProvaParser.CliniSiContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCliniSi(ProvaParser.CliniSiContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterCliniNO(ProvaParser.CliniNOContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCliniNO(ProvaParser.CliniNOContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -124,13 +160,13 @@ public class ProvaBaseListener implements ProvaListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFinal(ProvaParser.FinalContext ctx) { }
+	@Override public void enterEpxr2(ProvaParser.Epxr2Context ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFinal(ProvaParser.FinalContext ctx) { }
+	@Override public void exitEpxr2(ProvaParser.Epxr2Context ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -143,6 +179,30 @@ public class ProvaBaseListener implements ProvaListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitPiu(ProvaParser.PiuContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterExpr3(ProvaParser.Expr3Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitExpr3(ProvaParser.Expr3Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterPossibilita(ProvaParser.PossibilitaContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPossibilita(ProvaParser.PossibilitaContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

@@ -89,17 +89,53 @@ public interface ProvaListener extends ParseTreeListener {
 	 */
 	void exitNuovaEspressione(ProvaParser.NuovaEspressioneContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code passo}
-	 * labeled alternative in {@link ProvaParser#expr}.
+	 * Enter a parse tree produced by the {@code fine}
+	 * labeled alternative in {@link ProvaParser#alfa}.
 	 * @param ctx the parse tree
 	 */
-	void enterPasso(ProvaParser.PassoContext ctx);
+	void enterFine(ProvaParser.FineContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code passo}
-	 * labeled alternative in {@link ProvaParser#expr}.
+	 * Exit a parse tree produced by the {@code fine}
+	 * labeled alternative in {@link ProvaParser#alfa}.
 	 * @param ctx the parse tree
 	 */
-	void exitPasso(ProvaParser.PassoContext ctx);
+	void exitFine(ProvaParser.FineContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code fineSenzaFinal}
+	 * labeled alternative in {@link ProvaParser#alfa}.
+	 * @param ctx the parse tree
+	 */
+	void enterFineSenzaFinal(ProvaParser.FineSenzaFinalContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code fineSenzaFinal}
+	 * labeled alternative in {@link ProvaParser#alfa}.
+	 * @param ctx the parse tree
+	 */
+	void exitFineSenzaFinal(ProvaParser.FineSenzaFinalContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code cliniSi}
+	 * labeled alternative in {@link ProvaParser#clini}.
+	 * @param ctx the parse tree
+	 */
+	void enterCliniSi(ProvaParser.CliniSiContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code cliniSi}
+	 * labeled alternative in {@link ProvaParser#clini}.
+	 * @param ctx the parse tree
+	 */
+	void exitCliniSi(ProvaParser.CliniSiContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code cliniNO}
+	 * labeled alternative in {@link ProvaParser#clini}.
+	 * @param ctx the parse tree
+	 */
+	void enterCliniNO(ProvaParser.CliniNOContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code cliniNO}
+	 * labeled alternative in {@link ProvaParser#clini}.
+	 * @param ctx the parse tree
+	 */
+	void exitCliniNO(ProvaParser.CliniNOContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code per}
 	 * labeled alternative in {@link ProvaParser#expr}.
@@ -113,17 +149,15 @@ public interface ProvaListener extends ParseTreeListener {
 	 */
 	void exitPer(ProvaParser.PerContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code final}
-	 * labeled alternative in {@link ProvaParser#expr1}.
+	 * Enter a parse tree produced by {@link ProvaParser#epxr2}.
 	 * @param ctx the parse tree
 	 */
-	void enterFinal(ProvaParser.FinalContext ctx);
+	void enterEpxr2(ProvaParser.Epxr2Context ctx);
 	/**
-	 * Exit a parse tree produced by the {@code final}
-	 * labeled alternative in {@link ProvaParser#expr1}.
+	 * Exit a parse tree produced by {@link ProvaParser#epxr2}.
 	 * @param ctx the parse tree
 	 */
-	void exitFinal(ProvaParser.FinalContext ctx);
+	void exitEpxr2(ProvaParser.Epxr2Context ctx);
 	/**
 	 * Enter a parse tree produced by the {@code piu}
 	 * labeled alternative in {@link ProvaParser#expr1}.
@@ -136,4 +170,24 @@ public interface ProvaListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitPiu(ProvaParser.PiuContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ProvaParser#expr3}.
+	 * @param ctx the parse tree
+	 */
+	void enterExpr3(ProvaParser.Expr3Context ctx);
+	/**
+	 * Exit a parse tree produced by {@link ProvaParser#expr3}.
+	 * @param ctx the parse tree
+	 */
+	void exitExpr3(ProvaParser.Expr3Context ctx);
+	/**
+	 * Enter a parse tree produced by {@link ProvaParser#possibilita}.
+	 * @param ctx the parse tree
+	 */
+	void enterPossibilita(ProvaParser.PossibilitaContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ProvaParser#possibilita}.
+	 * @param ctx the parse tree
+	 */
+	void exitPossibilita(ProvaParser.PossibilitaContext ctx);
 }

@@ -58,12 +58,33 @@ public interface ProvaVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitNuovaEspressione(ProvaParser.NuovaEspressioneContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code passo}
-	 * labeled alternative in {@link ProvaParser#expr}.
+	 * Visit a parse tree produced by the {@code fine}
+	 * labeled alternative in {@link ProvaParser#alfa}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitPasso(ProvaParser.PassoContext ctx);
+	T visitFine(ProvaParser.FineContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code fineSenzaFinal}
+	 * labeled alternative in {@link ProvaParser#alfa}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFineSenzaFinal(ProvaParser.FineSenzaFinalContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code cliniSi}
+	 * labeled alternative in {@link ProvaParser#clini}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCliniSi(ProvaParser.CliniSiContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code cliniNO}
+	 * labeled alternative in {@link ProvaParser#clini}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCliniNO(ProvaParser.CliniNOContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code per}
 	 * labeled alternative in {@link ProvaParser#expr}.
@@ -72,12 +93,11 @@ public interface ProvaVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitPer(ProvaParser.PerContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code final}
-	 * labeled alternative in {@link ProvaParser#expr1}.
+	 * Visit a parse tree produced by {@link ProvaParser#epxr2}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitFinal(ProvaParser.FinalContext ctx);
+	T visitEpxr2(ProvaParser.Epxr2Context ctx);
 	/**
 	 * Visit a parse tree produced by the {@code piu}
 	 * labeled alternative in {@link ProvaParser#expr1}.
@@ -85,4 +105,16 @@ public interface ProvaVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitPiu(ProvaParser.PiuContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ProvaParser#expr3}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExpr3(ProvaParser.Expr3Context ctx);
+	/**
+	 * Visit a parse tree produced by {@link ProvaParser#possibilita}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPossibilita(ProvaParser.PossibilitaContext ctx);
 }
