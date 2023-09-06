@@ -1,30 +1,24 @@
 grammar Prova;
 
-start: iniz;
+start: generatore (',' generatore)* #liste;
 
-iniz: list;
-
-list: alfa (',' alfa)*;
-
-alfa:
-    '(' expr ')' clini alfa #nuovaEspressioneP
-    | expr clini alfa? #nuovaEspressione
-    | FINAl #fine
-    | #fineSenzaFinal
+generatore:
+    '(' expr ')' stella gen1? #nuovaEspressioneParantesi
+    | expr stella gen1? #nuovaEspressione
 ;
 
-clini: '*' #cliniSi | #cliniNO;
+gen1: generatore#rigenera|expr3#somma;
 
-expr: expr1 expr2?;
+stella: '*' #stellaSi | #stellaNO;
 
-expr1: FINAl expr3? #piu;
+expr: FINAl expr1? #conct;
 
-expr2: FINAl expr2?;
+expr1: FINAl expr1?  #chiudo | expr3 #sommaParentesi;
 
-expr3: '+' possibilita?;
+expr3: '+' possibilita#or;
 
-possibilita: FINAl | alfa;
+possibilita: generatore #rigenero;
 
 FINAl: [a-zA-Z0-9] | 'epsilon';
 
-WS: [ \t\r\n]+ -> skip;
+WS: [\t\r\n]+ -> skip;

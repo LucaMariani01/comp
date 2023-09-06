@@ -10,111 +10,87 @@ import org.antlr.v4.runtime.tree.ParseTreeVisitor;
  */
 public interface ProvaVisitor<T> extends ParseTreeVisitor<T> {
 	/**
-	 * Visit a parse tree produced by {@link ProvaParser#start}.
+	 * Visit a parse tree produced by the {@code liste}
+	 * labeled alternative in {@link ProvaParser#start}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitStart(ProvaParser.StartContext ctx);
+	T visitListe(ProvaParser.ListeContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code generatoreDiListe}
-	 * labeled alternative in {@link ProvaParser#iniz}.
+	 * Visit a parse tree produced by the {@code nuovaEspressioneParantesi}
+	 * labeled alternative in {@link ProvaParser#generatore}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitGeneratoreDiListe(ProvaParser.GeneratoreDiListeContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code successivo}
-	 * labeled alternative in {@link ProvaParser#list}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSuccessivo(ProvaParser.SuccessivoContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code nuovoElemento}
-	 * labeled alternative in {@link ProvaParser#list1}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitNuovoElemento(ProvaParser.NuovoElementoContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code vuoto}
-	 * labeled alternative in {@link ProvaParser#list1}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitVuoto(ProvaParser.VuotoContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code nuovaEspressioneP}
-	 * labeled alternative in {@link ProvaParser#alfa}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitNuovaEspressioneP(ProvaParser.NuovaEspressionePContext ctx);
+	T visitNuovaEspressioneParantesi(ProvaParser.NuovaEspressioneParantesiContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code nuovaEspressione}
-	 * labeled alternative in {@link ProvaParser#alfa}.
+	 * labeled alternative in {@link ProvaParser#generatore}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitNuovaEspressione(ProvaParser.NuovaEspressioneContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code fine}
-	 * labeled alternative in {@link ProvaParser#alfa}.
+	 * Visit a parse tree produced by the {@code rigenera}
+	 * labeled alternative in {@link ProvaParser#gen1}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitFine(ProvaParser.FineContext ctx);
+	T visitRigenera(ProvaParser.RigeneraContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code fineSenzaFinal}
-	 * labeled alternative in {@link ProvaParser#alfa}.
+	 * Visit a parse tree produced by the {@code somma}
+	 * labeled alternative in {@link ProvaParser#gen1}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitFineSenzaFinal(ProvaParser.FineSenzaFinalContext ctx);
+	T visitSomma(ProvaParser.SommaContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code cliniSi}
-	 * labeled alternative in {@link ProvaParser#clini}.
+	 * Visit a parse tree produced by the {@code stellaSi}
+	 * labeled alternative in {@link ProvaParser#stella}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitCliniSi(ProvaParser.CliniSiContext ctx);
+	T visitStellaSi(ProvaParser.StellaSiContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code cliniNO}
-	 * labeled alternative in {@link ProvaParser#clini}.
+	 * Visit a parse tree produced by the {@code stellaNO}
+	 * labeled alternative in {@link ProvaParser#stella}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitCliniNO(ProvaParser.CliniNOContext ctx);
+	T visitStellaNO(ProvaParser.StellaNOContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code per}
+	 * Visit a parse tree produced by the {@code conct}
 	 * labeled alternative in {@link ProvaParser#expr}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitPer(ProvaParser.PerContext ctx);
+	T visitConct(ProvaParser.ConctContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link ProvaParser#epxr2}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitEpxr2(ProvaParser.Epxr2Context ctx);
-	/**
-	 * Visit a parse tree produced by the {@code piu}
+	 * Visit a parse tree produced by the {@code chiudo}
 	 * labeled alternative in {@link ProvaParser#expr1}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitPiu(ProvaParser.PiuContext ctx);
+	T visitChiudo(ProvaParser.ChiudoContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link ProvaParser#expr3}.
+	 * Visit a parse tree produced by the {@code sommaParentesi}
+	 * labeled alternative in {@link ProvaParser#expr1}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitExpr3(ProvaParser.Expr3Context ctx);
+	T visitSommaParentesi(ProvaParser.SommaParentesiContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link ProvaParser#possibilita}.
+	 * Visit a parse tree produced by the {@code or}
+	 * labeled alternative in {@link ProvaParser#expr3}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitPossibilita(ProvaParser.PossibilitaContext ctx);
+	T visitOr(ProvaParser.OrContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code rigenero}
+	 * labeled alternative in {@link ProvaParser#possibilita}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRigenero(ProvaParser.RigeneroContext ctx);
 }

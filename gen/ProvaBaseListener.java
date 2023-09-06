@@ -16,73 +16,25 @@ public class ProvaBaseListener implements ProvaListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterStart(ProvaParser.StartContext ctx) { }
+	@Override public void enterListe(ProvaParser.ListeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitStart(ProvaParser.StartContext ctx) { }
+	@Override public void exitListe(ProvaParser.ListeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterGeneratoreDiListe(ProvaParser.GeneratoreDiListeContext ctx) { }
+	@Override public void enterNuovaEspressioneParantesi(ProvaParser.NuovaEspressioneParantesiContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitGeneratoreDiListe(ProvaParser.GeneratoreDiListeContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterSuccessivo(ProvaParser.SuccessivoContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitSuccessivo(ProvaParser.SuccessivoContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterNuovoElemento(ProvaParser.NuovoElementoContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitNuovoElemento(ProvaParser.NuovoElementoContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterVuoto(ProvaParser.VuotoContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitVuoto(ProvaParser.VuotoContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterNuovaEspressioneP(ProvaParser.NuovaEspressionePContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitNuovaEspressioneP(ProvaParser.NuovaEspressionePContext ctx) { }
+	@Override public void exitNuovaEspressioneParantesi(ProvaParser.NuovaEspressioneParantesiContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -100,109 +52,109 @@ public class ProvaBaseListener implements ProvaListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFine(ProvaParser.FineContext ctx) { }
+	@Override public void enterRigenera(ProvaParser.RigeneraContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFine(ProvaParser.FineContext ctx) { }
+	@Override public void exitRigenera(ProvaParser.RigeneraContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFineSenzaFinal(ProvaParser.FineSenzaFinalContext ctx) { }
+	@Override public void enterSomma(ProvaParser.SommaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFineSenzaFinal(ProvaParser.FineSenzaFinalContext ctx) { }
+	@Override public void exitSomma(ProvaParser.SommaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCliniSi(ProvaParser.CliniSiContext ctx) { }
+	@Override public void enterStellaSi(ProvaParser.StellaSiContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCliniSi(ProvaParser.CliniSiContext ctx) { }
+	@Override public void exitStellaSi(ProvaParser.StellaSiContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCliniNO(ProvaParser.CliniNOContext ctx) { }
+	@Override public void enterStellaNO(ProvaParser.StellaNOContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCliniNO(ProvaParser.CliniNOContext ctx) { }
+	@Override public void exitStellaNO(ProvaParser.StellaNOContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPer(ProvaParser.PerContext ctx) { }
+	@Override public void enterConct(ProvaParser.ConctContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPer(ProvaParser.PerContext ctx) { }
+	@Override public void exitConct(ProvaParser.ConctContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEpxr2(ProvaParser.Epxr2Context ctx) { }
+	@Override public void enterChiudo(ProvaParser.ChiudoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEpxr2(ProvaParser.Epxr2Context ctx) { }
+	@Override public void exitChiudo(ProvaParser.ChiudoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPiu(ProvaParser.PiuContext ctx) { }
+	@Override public void enterSommaParentesi(ProvaParser.SommaParentesiContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPiu(ProvaParser.PiuContext ctx) { }
+	@Override public void exitSommaParentesi(ProvaParser.SommaParentesiContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpr3(ProvaParser.Expr3Context ctx) { }
+	@Override public void enterOr(ProvaParser.OrContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpr3(ProvaParser.Expr3Context ctx) { }
+	@Override public void exitOr(ProvaParser.OrContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPossibilita(ProvaParser.PossibilitaContext ctx) { }
+	@Override public void enterRigenero(ProvaParser.RigeneroContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPossibilita(ProvaParser.PossibilitaContext ctx) { }
+	@Override public void exitRigenero(ProvaParser.RigeneroContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

@@ -7,187 +7,147 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface ProvaListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link ProvaParser#start}.
+	 * Enter a parse tree produced by the {@code liste}
+	 * labeled alternative in {@link ProvaParser#start}.
 	 * @param ctx the parse tree
 	 */
-	void enterStart(ProvaParser.StartContext ctx);
+	void enterListe(ProvaParser.ListeContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ProvaParser#start}.
+	 * Exit a parse tree produced by the {@code liste}
+	 * labeled alternative in {@link ProvaParser#start}.
 	 * @param ctx the parse tree
 	 */
-	void exitStart(ProvaParser.StartContext ctx);
+	void exitListe(ProvaParser.ListeContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code generatoreDiListe}
-	 * labeled alternative in {@link ProvaParser#iniz}.
+	 * Enter a parse tree produced by the {@code nuovaEspressioneParantesi}
+	 * labeled alternative in {@link ProvaParser#generatore}.
 	 * @param ctx the parse tree
 	 */
-	void enterGeneratoreDiListe(ProvaParser.GeneratoreDiListeContext ctx);
+	void enterNuovaEspressioneParantesi(ProvaParser.NuovaEspressioneParantesiContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code generatoreDiListe}
-	 * labeled alternative in {@link ProvaParser#iniz}.
+	 * Exit a parse tree produced by the {@code nuovaEspressioneParantesi}
+	 * labeled alternative in {@link ProvaParser#generatore}.
 	 * @param ctx the parse tree
 	 */
-	void exitGeneratoreDiListe(ProvaParser.GeneratoreDiListeContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code successivo}
-	 * labeled alternative in {@link ProvaParser#list}.
-	 * @param ctx the parse tree
-	 */
-	void enterSuccessivo(ProvaParser.SuccessivoContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code successivo}
-	 * labeled alternative in {@link ProvaParser#list}.
-	 * @param ctx the parse tree
-	 */
-	void exitSuccessivo(ProvaParser.SuccessivoContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code nuovoElemento}
-	 * labeled alternative in {@link ProvaParser#list1}.
-	 * @param ctx the parse tree
-	 */
-	void enterNuovoElemento(ProvaParser.NuovoElementoContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code nuovoElemento}
-	 * labeled alternative in {@link ProvaParser#list1}.
-	 * @param ctx the parse tree
-	 */
-	void exitNuovoElemento(ProvaParser.NuovoElementoContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code vuoto}
-	 * labeled alternative in {@link ProvaParser#list1}.
-	 * @param ctx the parse tree
-	 */
-	void enterVuoto(ProvaParser.VuotoContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code vuoto}
-	 * labeled alternative in {@link ProvaParser#list1}.
-	 * @param ctx the parse tree
-	 */
-	void exitVuoto(ProvaParser.VuotoContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code nuovaEspressioneP}
-	 * labeled alternative in {@link ProvaParser#alfa}.
-	 * @param ctx the parse tree
-	 */
-	void enterNuovaEspressioneP(ProvaParser.NuovaEspressionePContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code nuovaEspressioneP}
-	 * labeled alternative in {@link ProvaParser#alfa}.
-	 * @param ctx the parse tree
-	 */
-	void exitNuovaEspressioneP(ProvaParser.NuovaEspressionePContext ctx);
+	void exitNuovaEspressioneParantesi(ProvaParser.NuovaEspressioneParantesiContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code nuovaEspressione}
-	 * labeled alternative in {@link ProvaParser#alfa}.
+	 * labeled alternative in {@link ProvaParser#generatore}.
 	 * @param ctx the parse tree
 	 */
 	void enterNuovaEspressione(ProvaParser.NuovaEspressioneContext ctx);
 	/**
 	 * Exit a parse tree produced by the {@code nuovaEspressione}
-	 * labeled alternative in {@link ProvaParser#alfa}.
+	 * labeled alternative in {@link ProvaParser#generatore}.
 	 * @param ctx the parse tree
 	 */
 	void exitNuovaEspressione(ProvaParser.NuovaEspressioneContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code fine}
-	 * labeled alternative in {@link ProvaParser#alfa}.
+	 * Enter a parse tree produced by the {@code rigenera}
+	 * labeled alternative in {@link ProvaParser#gen1}.
 	 * @param ctx the parse tree
 	 */
-	void enterFine(ProvaParser.FineContext ctx);
+	void enterRigenera(ProvaParser.RigeneraContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code fine}
-	 * labeled alternative in {@link ProvaParser#alfa}.
+	 * Exit a parse tree produced by the {@code rigenera}
+	 * labeled alternative in {@link ProvaParser#gen1}.
 	 * @param ctx the parse tree
 	 */
-	void exitFine(ProvaParser.FineContext ctx);
+	void exitRigenera(ProvaParser.RigeneraContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code fineSenzaFinal}
-	 * labeled alternative in {@link ProvaParser#alfa}.
+	 * Enter a parse tree produced by the {@code somma}
+	 * labeled alternative in {@link ProvaParser#gen1}.
 	 * @param ctx the parse tree
 	 */
-	void enterFineSenzaFinal(ProvaParser.FineSenzaFinalContext ctx);
+	void enterSomma(ProvaParser.SommaContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code fineSenzaFinal}
-	 * labeled alternative in {@link ProvaParser#alfa}.
+	 * Exit a parse tree produced by the {@code somma}
+	 * labeled alternative in {@link ProvaParser#gen1}.
 	 * @param ctx the parse tree
 	 */
-	void exitFineSenzaFinal(ProvaParser.FineSenzaFinalContext ctx);
+	void exitSomma(ProvaParser.SommaContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code cliniSi}
-	 * labeled alternative in {@link ProvaParser#clini}.
+	 * Enter a parse tree produced by the {@code stellaSi}
+	 * labeled alternative in {@link ProvaParser#stella}.
 	 * @param ctx the parse tree
 	 */
-	void enterCliniSi(ProvaParser.CliniSiContext ctx);
+	void enterStellaSi(ProvaParser.StellaSiContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code cliniSi}
-	 * labeled alternative in {@link ProvaParser#clini}.
+	 * Exit a parse tree produced by the {@code stellaSi}
+	 * labeled alternative in {@link ProvaParser#stella}.
 	 * @param ctx the parse tree
 	 */
-	void exitCliniSi(ProvaParser.CliniSiContext ctx);
+	void exitStellaSi(ProvaParser.StellaSiContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code cliniNO}
-	 * labeled alternative in {@link ProvaParser#clini}.
+	 * Enter a parse tree produced by the {@code stellaNO}
+	 * labeled alternative in {@link ProvaParser#stella}.
 	 * @param ctx the parse tree
 	 */
-	void enterCliniNO(ProvaParser.CliniNOContext ctx);
+	void enterStellaNO(ProvaParser.StellaNOContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code cliniNO}
-	 * labeled alternative in {@link ProvaParser#clini}.
+	 * Exit a parse tree produced by the {@code stellaNO}
+	 * labeled alternative in {@link ProvaParser#stella}.
 	 * @param ctx the parse tree
 	 */
-	void exitCliniNO(ProvaParser.CliniNOContext ctx);
+	void exitStellaNO(ProvaParser.StellaNOContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code per}
+	 * Enter a parse tree produced by the {@code conct}
 	 * labeled alternative in {@link ProvaParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void enterPer(ProvaParser.PerContext ctx);
+	void enterConct(ProvaParser.ConctContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code per}
+	 * Exit a parse tree produced by the {@code conct}
 	 * labeled alternative in {@link ProvaParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void exitPer(ProvaParser.PerContext ctx);
+	void exitConct(ProvaParser.ConctContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ProvaParser#epxr2}.
-	 * @param ctx the parse tree
-	 */
-	void enterEpxr2(ProvaParser.Epxr2Context ctx);
-	/**
-	 * Exit a parse tree produced by {@link ProvaParser#epxr2}.
-	 * @param ctx the parse tree
-	 */
-	void exitEpxr2(ProvaParser.Epxr2Context ctx);
-	/**
-	 * Enter a parse tree produced by the {@code piu}
+	 * Enter a parse tree produced by the {@code chiudo}
 	 * labeled alternative in {@link ProvaParser#expr1}.
 	 * @param ctx the parse tree
 	 */
-	void enterPiu(ProvaParser.PiuContext ctx);
+	void enterChiudo(ProvaParser.ChiudoContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code piu}
+	 * Exit a parse tree produced by the {@code chiudo}
 	 * labeled alternative in {@link ProvaParser#expr1}.
 	 * @param ctx the parse tree
 	 */
-	void exitPiu(ProvaParser.PiuContext ctx);
+	void exitChiudo(ProvaParser.ChiudoContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ProvaParser#expr3}.
+	 * Enter a parse tree produced by the {@code sommaParentesi}
+	 * labeled alternative in {@link ProvaParser#expr1}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpr3(ProvaParser.Expr3Context ctx);
+	void enterSommaParentesi(ProvaParser.SommaParentesiContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ProvaParser#expr3}.
+	 * Exit a parse tree produced by the {@code sommaParentesi}
+	 * labeled alternative in {@link ProvaParser#expr1}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpr3(ProvaParser.Expr3Context ctx);
+	void exitSommaParentesi(ProvaParser.SommaParentesiContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ProvaParser#possibilita}.
+	 * Enter a parse tree produced by the {@code or}
+	 * labeled alternative in {@link ProvaParser#expr3}.
 	 * @param ctx the parse tree
 	 */
-	void enterPossibilita(ProvaParser.PossibilitaContext ctx);
+	void enterOr(ProvaParser.OrContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ProvaParser#possibilita}.
+	 * Exit a parse tree produced by the {@code or}
+	 * labeled alternative in {@link ProvaParser#expr3}.
 	 * @param ctx the parse tree
 	 */
-	void exitPossibilita(ProvaParser.PossibilitaContext ctx);
+	void exitOr(ProvaParser.OrContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code rigenero}
+	 * labeled alternative in {@link ProvaParser#possibilita}.
+	 * @param ctx the parse tree
+	 */
+	void enterRigenero(ProvaParser.RigeneroContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code rigenero}
+	 * labeled alternative in {@link ProvaParser#possibilita}.
+	 * @param ctx the parse tree
+	 */
+	void exitRigenero(ProvaParser.RigeneroContext ctx);
 }

@@ -17,42 +17,14 @@ public class ProvaBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements 
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitStart(ProvaParser.StartContext ctx) { return visitChildren(ctx); }
+	@Override public T visitListe(ProvaParser.ListeContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitGeneratoreDiListe(ProvaParser.GeneratoreDiListeContext ctx) { return visitChildren(ctx); }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation returns the result of calling
-	 * {@link #visitChildren} on {@code ctx}.</p>
-	 */
-	@Override public T visitSuccessivo(ProvaParser.SuccessivoContext ctx) { return visitChildren(ctx); }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation returns the result of calling
-	 * {@link #visitChildren} on {@code ctx}.</p>
-	 */
-	@Override public T visitNuovoElemento(ProvaParser.NuovoElementoContext ctx) { return visitChildren(ctx); }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation returns the result of calling
-	 * {@link #visitChildren} on {@code ctx}.</p>
-	 */
-	@Override public T visitVuoto(ProvaParser.VuotoContext ctx) { return visitChildren(ctx); }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation returns the result of calling
-	 * {@link #visitChildren} on {@code ctx}.</p>
-	 */
-	@Override public T visitNuovaEspressioneP(ProvaParser.NuovaEspressionePContext ctx) { return visitChildren(ctx); }
+	@Override public T visitNuovaEspressioneParantesi(ProvaParser.NuovaEspressioneParantesiContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -66,61 +38,61 @@ public class ProvaBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements 
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitFine(ProvaParser.FineContext ctx) { return visitChildren(ctx); }
+	@Override public T visitRigenera(ProvaParser.RigeneraContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitFineSenzaFinal(ProvaParser.FineSenzaFinalContext ctx) { return visitChildren(ctx); }
+	@Override public T visitSomma(ProvaParser.SommaContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitCliniSi(ProvaParser.CliniSiContext ctx) { return visitChildren(ctx); }
+	@Override public T visitStellaSi(ProvaParser.StellaSiContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitCliniNO(ProvaParser.CliniNOContext ctx) { return visitChildren(ctx); }
+	@Override public T visitStellaNO(ProvaParser.StellaNOContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitPer(ProvaParser.PerContext ctx) { return visitChildren(ctx); }
+	@Override public T visitConct(ProvaParser.ConctContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitEpxr2(ProvaParser.Epxr2Context ctx) { return visitChildren(ctx); }
+	@Override public T visitChiudo(ProvaParser.ChiudoContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitPiu(ProvaParser.PiuContext ctx) { return visitChildren(ctx); }
+	@Override public T visitSommaParentesi(ProvaParser.SommaParentesiContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitExpr3(ProvaParser.Expr3Context ctx) { return visitChildren(ctx); }
+	@Override public T visitOr(ProvaParser.OrContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitPossibilita(ProvaParser.PossibilitaContext ctx) { return visitChildren(ctx); }
+	@Override public T visitRigenero(ProvaParser.RigeneroContext ctx) { return visitChildren(ctx); }
 }
